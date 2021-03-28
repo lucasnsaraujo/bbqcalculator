@@ -26,6 +26,7 @@ h1 {
   font-family: Ambit;
   color: #221918;
   font-size: 185%;
+  text-align: center;
 }
 
 input, button {
@@ -86,8 +87,10 @@ button:hover {background-color: #835243; transition: 0.3s; color: #170F0E;}
 }
 
 footer {
+  display: block;
   width: 100%;
   height: 150px;
+  position: absolute;
 }
 #author, #credits {
   color: #AC9A9A;
@@ -120,28 +123,12 @@ a:hover {color: darkred;}
 
 #github:hover {opacity: 40%;}
 
-@media (max-width: 480px) {
-  .bg{
-    width:100%
-  }
-  .container {
-    padding: 30px;
-    width: 280px;
-  }
-  h1{
-    font-size: 28px;
-  }
-}
 @media (max-width: 320px) {
-  .container {
-    width: 240px
-  }
-  h1{
-    font-size: 24px;
-  }
+  h1 {font-size: 23px;}
+}
+@media (max-width:280px) {
 
 }
-
 
 
 

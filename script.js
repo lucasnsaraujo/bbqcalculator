@@ -61,7 +61,6 @@ function calculate() {
   <p class="item"><img src="./img/beer.png" alt="" class="itemIcon">${beer} de Cerveja</p>
   <p class="item"><img src="./img/softdrinks.png" alt="" class="itemIcon">${beverage} de Bebidas</p>`;
 
-  result.innerHTML += '<button id="reset" onclick="clearScreen()">LIMPAR</button>'
   
 }
 
