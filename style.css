@@ -3,33 +3,43 @@
   src: url(./fonts/Ambit-Black.ttf);
 }
 
-* {padding: 0; margin: 0; font-family: 'Roboto', sans-serif;}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
 
 .bg {
-  background: rgb(34,25,24);
-  background: linear-gradient(90deg, rgba(34,25,24,1) 21%, rgba(46,34,33,1) 100%);
+  background: rgb(34, 25, 24);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 25, 24, 1) 21%,
+    rgba(46, 34, 33, 1) 100%
+  );
   height: 100vh;
+  width: 100%;
+  overflow: auto;
 }
 
 .container {
   position: relative;
-  background-color: #A99A9A;
+  background-color: #a99a9a;
   max-width: 300px;
   padding: 40px;
   margin: auto;
   top: 30px;
   border-radius: 10px;
-
+  margin-bottom: 50px;
 }
 
 h1 {
   font-family: Ambit;
   color: #221918;
   font-size: 185%;
-  text-align: center;
 }
 
-input, button {
+input,
+button {
   display: block;
   width: 100%;
   margin-top: 13px;
@@ -46,25 +56,25 @@ input {
 
 button {
   font-family: Ambit;
-  box-shadow:
-  0 5.7px 4.5px rgba(0, 0, 0, 0.024),
-  0 15.7px 12.4px rgba(0, 0, 0, 0.035),
-  0 37.7px 29.8px rgba(0, 0, 0, 0.046),
-  0 125px 99px rgba(0, 0, 0, 0.07)
-;
+  box-shadow: 0 5.7px 4.5px rgba(0, 0, 0, 0.024),
+    0 15.7px 12.4px rgba(0, 0, 0, 0.035), 0 37.7px 29.8px rgba(0, 0, 0, 0.046),
+    0 125px 99px rgba(0, 0, 0, 0.07);
   outline: 0;
   border: 0;
   font-size: 14px;
   cursor: pointer;
   border-radius: 10px;
-  background-color: #221918 ;
-  color: #AC9A9A;
+  background-color: #221918;
+  color: #ac9a9a;
   font-weight: 800;
   margin-bottom: 30px;
-  
 }
 
-button:hover {background-color: #835243; transition: 0.3s; color: #170F0E;}
+button:hover {
+  background-color: #835243;
+  transition: 0.3s;
+  color: #170f0e;
+}
 
 #reset {
   margin-top: 80px;
@@ -73,7 +83,7 @@ button:hover {background-color: #835243; transition: 0.3s; color: #170F0E;}
 .item {
   background-color: #221918;
   font-weight: bold;
-  color: #AC9A9A;
+  color: #ac9a9a;
   line-height: 30px;
   padding: 10px;
   border-radius: 10px;
@@ -88,12 +98,13 @@ button:hover {background-color: #835243; transition: 0.3s; color: #170F0E;}
 
 footer {
   display: block;
+  position: relative;
   width: 100%;
-  height: 150px;
-  position: absolute;
+  height: 100px;
 }
-#author, #credits {
-  color: #AC9A9A;
+#author,
+#credits {
+  color: #ac9a9a;
   font-weight: 300;
   position: absolute;
   bottom: 30px;
@@ -101,7 +112,10 @@ footer {
   margin-left: -105px;
 }
 
-#author {font-weight: 900; font-size: 22px;}
+#author {
+  font-weight: 900;
+  font-size: 22px;
+}
 
 #credits {
   font-size: 14px;
@@ -109,26 +123,44 @@ footer {
   margin-left: -107.5px;
 }
 
-a {text-decoration: none; color: #AC9A9A;}
-a:hover {color: darkred;}
+a {
+  text-decoration: none;
+  color: #ac9a9a;
+}
+a:hover {
+  color: darkred;
+}
 
-#github{
+#github {
   width: 40px;
   position: absolute;
   bottom: 60px;
   left: 50%;
   margin-left: -20px;
-
 }
 
-#github:hover {opacity: 40%;}
+#github:hover {
+  opacity: 40%;
+}
 
+@media (max-width: 480px) {
+  .bg {
+    width: 100%;
+  }
+  .container {
+    padding: 30px;
+    width: 280px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+}
 @media (max-width: 320px) {
-  h1 {font-size: 23px;}
+  .container {
+    width: 240px;
+    margin-bottom: 50px;
+  }
+  h1 {
+    font-size: 24px;
+  }
 }
-@media (max-width:280px) {
-
-}
-
-
-
